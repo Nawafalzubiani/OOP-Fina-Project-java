@@ -33,7 +33,7 @@ public class Supermarket {
             productCount++;
       } else {
 
-            System.out.println("عذراً، المخزون ممتلئ!");
+            System.out.println("Inventory is full. Cannot add more products.");
         }
     
         }
@@ -61,7 +61,7 @@ public class Supermarket {
       // إذا كان المخزون فارغ
         if (productCount == 0) {
 
-            System.out.println("المخزون فارغ حالياً.");
+            System.out.println("Inventory is currently empty.");
             return;
         }
 
