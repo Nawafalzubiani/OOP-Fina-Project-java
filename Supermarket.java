@@ -1,5 +1,6 @@
 package OOP;
-
+import Java.io.FileWriter;
+import java.io.IOExcption;
 public class Supermarket {
 // مصفوفة لتخزين المنتجات
     private Product[] inventory;
@@ -10,7 +11,7 @@ public class Supermarket {
     // Constructor لتحديد سعة المخزون
     public Supermarket(int capacity) {
 
-        / إنشاء المصفوفة بالحجم المطلوب
+        // إنشاء المصفوفة بالحجم المطلوب
         this.inventory = new Product[capacity];
 
         // يبدأ المخزون فارغ
@@ -18,7 +19,7 @@ public class Supermarket {
     }
 
         
-    }
+    
 
     // إضافة منتج جديد للمخزون
     public void addProduct(Product p) {
@@ -37,7 +38,7 @@ public class Supermarket {
         }
     
         }
-    }
+    
 
     // البحث عن منتج باستخدام الكود
     public Product searchProduct(String code) {
@@ -75,7 +76,7 @@ public class Supermarket {
     // حفظ بيانات المنتجات في ملف
     public void saveToFile(String filename) {
 
-        try (FileWriter writer = new FileWriter(filename)) {
+        try ( FileWriter writer = new FileWriter(filename)) {
 
             for (int i = 0; i < productCount; i++) {
 
@@ -88,4 +89,6 @@ public class Supermarket {
 
             System.out.println("An error occurred while saving: " + e.getMessage());
 
+}
+}
 }
