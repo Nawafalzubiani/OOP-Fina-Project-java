@@ -1,5 +1,5 @@
 package OOP;
-import Java.io.FileWriter;
+import java.io.FileWriter;
 import java.io.IOExcption;
 public class Supermarket {
 // مصفوفة لتخزين المنتجات
